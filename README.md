@@ -5,7 +5,8 @@ You need to have node installed and then you can simly clone this repository
 ```
 git clone https://github.com/zecjy/steam-web-auth
 ```
-Then jump to steam-web-auth/server and install the needed npm packages and run it once to configure your account
+Then jump to steam-web-auth/server and install the needed npm packages and run it once to configure your account, so fill everything in.
+You can get the secrets from the unencrypted maFile from steamDesktopAuthentificator (https://github.com/Jessecar96/SteamDesktopAuthenticator)
 ```
 cd steam-web-auth/server
 npm install
