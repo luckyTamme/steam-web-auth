@@ -1,7 +1,7 @@
 # steam-web-auth
 This will give you your 2FA code and you will be able to act on mobile confirmations from anywhere.
 # Setup
-You need to have node installed and then you can simly clone this repository
+You need to have node installed and then you can simlpy clone this repository
 ```
 git clone https://github.com/zecjy/steam-web-auth
 ```
@@ -19,3 +19,5 @@ npm install forever
 forever start app.js
 ```
 Lastly you need to go to steam-web-auth/server/files/main.js and edit your IP and port with your favorited editor.
+
+If you want to use another account just delete the settings.json file in steam-web-auth/server and start it via node again.
