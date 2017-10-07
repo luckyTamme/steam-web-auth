@@ -1,0 +1,20 @@
+{
+  "name": "web-auth",
+  "version": "0.0.0",
+  "description": "webAuth",
+  "main": "app.js",
+  "author": {
+    "name": "ZeCjy"
+  },
+  "dependencies": {
+    "express": "^4.15.4",
+    "fs": "0.0.1-security",
+    "http": "0.0.0",
+    "readline-sync": "^1.4.7",
+    "socketio": "^1.0.0",
+    "steam-totp": "^2.0.1",
+    "steam-tradeoffer-manager": "^2.9.0",
+    "steam-user": "^3.22.0",
+    "steamcommunity": "^3.32.2"
+  }
+}

@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+    <script src="https://cdn.rawgit.com/zenorocha/clipboard.js/v1.7.1/dist/clipboard.min.js"></script>
+    <script src="bootstrap-notify.min.js"></script>
+    <script src="main.js"></script>
+    <meta charset="utf-8" />
+    <title>webAuth</title>
+</head>
+<body>
+    <div class="modal" id="confirmation-modal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 id="title"></h5>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div id="items-give" class="items-container">
+                        <span>You offered:</span>
+                    </div>
+                    <hr />
+                    <div id="items-receive" class="items-container">
+                        <span id="tradepartner"></span>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" id="decline-btn">Decline</button>
+                    <button type="button" class="btn btn-success"  id="confirm-btn">Accept</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div id="code-container">
+            <div id="code">CODE</div>
+            <button onclick="copyCode" id="copy-btn" class="btn" data-clipboard-target="#code">Copy to Clipboard</button>
+        </div>
+        <div id="confirmations-container">
+            <div id="btn-container">
+                <button id="confirm-sell" onclick="sellItems(true)" class="sell btn btn-success" disabled>Confirm selected</button>
+                <button id="refresh-btn" onclick="socket.emit('requestCode')" class="btn btn-info">Refresh</button>
+                <button id="cancel-sell" onclick="sellItems(false)" class="sell btn btn-danger" disabled>Cancel selected</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

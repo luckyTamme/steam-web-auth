@@ -1,0 +1,120 @@
+﻿body {
+    background-color: #ececec;
+}
+
+#code {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+    border: 1px solid;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+#copy-btn {
+    position: relative;
+    left: 50%;
+    display: block;
+    transform: translateX(-50%);
+    margin: 10px 0;
+}
+
+#code-container {
+    padding: 15px;
+    border-bottom: 1px solid;
+}
+
+#confirmations-container {
+    padding: 15px;
+}
+
+.confirmation {
+    margin: 10px 0;
+    border: 1px solid;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #f7f3f0;
+}
+
+.profile-icon {
+    height: 64px;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.trade-info-short {
+    vertical-align: middle;
+    display: inline-block;
+    width: calc(100% - 74px);
+    white-space: nowrap;
+}
+
+.trade-info-short span {
+    display: block;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.trade-info-short .title {
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.trade-info-short .info {
+    font-weight: normal;
+    font-size: 0.85em;
+}
+
+.item {
+    height: 80px;
+    width: 80px;
+    border: 1px solid;
+    margin: 2px 2px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.item img {
+    position: relative;
+    width: 95%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%) translateY(-50%);
+}
+
+.items-container span {
+    display: block;
+}
+
+.confirmation.selected {
+    border: 1px solid blue;
+    background-color: #e8ebf1;
+}
+
+.confirmation.working-on {
+    cursor: progress;
+    opacity: 0.75;
+}
+
+#confirm-sell {
+    float: left;
+}
+
+#refresh-btn {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#cancel-sell {
+    float: right;
+}
+
+#btn-container {
+    height: 40px;
+}
+
+#btn-container .btn {
+    border-radius: 0;
+}
