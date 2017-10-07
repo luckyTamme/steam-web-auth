@@ -1,7 +1,7 @@
 # steam-web-auth
 This will give you your 2FA code and you will be able to act on mobile confirmations from anywhere.
 # Setup
-You need to have node installed and then you can simlpy clone this repository
+You need to have node installed and then you can simply clone this repository
 ```
 git clone https://github.com/zecjy/steam-web-auth
 ```
