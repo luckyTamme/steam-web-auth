@@ -23,5 +23,5 @@ Lastly you need to go to steam-web-auth/server/files/main.js and edit your IP an
 If you want to use another account just delete the settings.json file in steam-web-auth/server and start it via node again.
 
 # Screenshots
-https://i.gyazo.com/d3a6b5f4c5018a860a185b7bdb19276f.png
-https://i.gyazo.com/2dededa4d1a5fae31cded0c59dc8a6bf.png
+![screenshot](https://i.gyazo.com/d3a6b5f4c5018a860a185b7bdb19276f.png)
+![screenshot](https://i.gyazo.com/2dededa4d1a5fae31cded0c59dc8a6bf.png)
